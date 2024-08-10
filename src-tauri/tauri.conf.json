@@ -10,6 +10,7 @@
     "version": "0.0.0"
   },
   "tauri": {
+    "macOSPrivateApi": true,
     "allowlist": {
       "all": false,
       "shell": {
@@ -19,7 +20,9 @@
     },
     "windows": [
       {
-        "title": "free-speak",
+        "transparent":true,
+        "resizable": true,
+        "title": "Custom Terminal shell",
         "width": 800,
         "height": 600
       }
@@ -30,7 +33,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.terminal.dev",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",

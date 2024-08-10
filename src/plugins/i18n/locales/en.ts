@@ -1,6 +1,8 @@
 const en = {
   app: {
-    t: "Free Speak",
+    auth: {
+      t: "Test",
+    },
   },
 };
 

@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TerminalInstance from "./components/TerminalInstance/TerminalInstance.vue";
+</script>
 
 <template>
-  <div class="bg-gray-950 h-screen">
-    <router-view />
+  <div class="h-screen bg-black/50 rounded-xl">
+    <terminal-instance />
   </div>
 </template>
