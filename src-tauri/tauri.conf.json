@@ -6,25 +6,41 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "free-speak",
-    "version": "0.0.0"
+    "productName": "Simple terminal",
+    "version": "1.0.0"
   },
   "tauri": {
     "macOSPrivateApi": true,
     "allowlist": {
-      "all": false,
+      "fs": {
+        "all": true,
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "copyFile": true,
+        "createDir": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "exists": true,
+        "scope": ["$APPDATA/profiles/*"]
+      },
+      "all": true,
       "shell": {
         "all": false,
         "open": true
       }
     },
+
     "windows": [
       {
+        "decorations": false,
+        "label": "main",
         "transparent":true,
         "resizable": true,
-        "title": "Custom Terminal shell",
+        "title": "Shell",
         "width": 800,
-        "height": 600
+        "height": 425
       }
     ],
     "security": {

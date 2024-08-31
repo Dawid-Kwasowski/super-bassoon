@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import TerminalInstance from "./components/TerminalInstance/TerminalInstance.vue";
+import TitleBar from "./layout/TitleBar.vue";
 </script>
 
 <template>
-  <div class="h-screen bg-black/50 rounded-xl">
-    <terminal-instance />
+  <div class="bg-black rounded-xl py-9 h-full overflow-hidden">
+    <title-bar />
+    <router-view />
   </div>
 </template>

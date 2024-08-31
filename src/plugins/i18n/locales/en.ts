@@ -1,7 +1,15 @@
 const en = {
-  app: {
-    auth: {
-      t: "Test",
+  views: {
+    settings: {
+      t: "Work in Progress",
+    },
+    profiles: {
+      sideBar: {
+        t: "Profile Name",
+      },
+      general: {
+        t: "Basics",
+      },
     },
   },
 };
